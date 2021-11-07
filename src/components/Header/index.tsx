@@ -1,6 +1,7 @@
 import { Container, Content } from "./styles";
 
 export function Header() {
+  
     return (
       <Container>
         <Content>
@@ -19,7 +20,7 @@ export function Header() {
         >
         SEND
         </button>
-        </Content>
+       </Content>
       </Container>
     );
 }

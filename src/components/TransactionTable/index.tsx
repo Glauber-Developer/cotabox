@@ -12,7 +12,6 @@ export function TransactionTable() {
                 <th>Participation</th>
               </tr>
             </thead>
-
             <tbody>
               <tr>
                 <td>1</td>
