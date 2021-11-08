@@ -4,6 +4,24 @@ export const Container = styled.header`
   background: var(--background);
   height: 230px;
 `;
+export const First = styled.div`
+  color: #ea4b35;
+  width: 5rem;
+  margin-top: 2.8%;
+`;
+export const Last = styled.div`
+  color: #ea4b35;
+  width: 5rem;
+  margin-left: 27.5%;
+  margin-top: -3.2%;
+`;
+export const Percent = styled.div`
+  color: #ea4b35;
+  width: 5rem;
+  margin-left: 55%;
+  margin-top: -3.2%;
+  display: flex;
+`;
 
 export const Content = styled.div`
   max-width: 1120px;
@@ -13,14 +31,14 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  button[type="submit"] {
+    button[type="submit"] {
       width: 15%;
       padding: 0 1rem;
       height: 4rem;
       background: var(--background);
-      color: #fff;
+      color: var(--shape);
       border-radius: 0.25rem;
-      border: 0.13rem solid #fff;
+      border: 0.13rem solid var(--shape);
       font-size: 1rem;
       font-weight: bold;
       font-family: Arial, Helvetica, sans-serif;
@@ -30,24 +48,28 @@ export const Content = styled.div`
       &:hover {
           filter: brightness(0.9);
       }
-  }
-  input {
+    }
+    input {
       width: 23%;
       padding: 0 1rem;
       height: 4rem;
       border-radius: 0.25rem;
-      margin-right: 0;
+      margin-right: 0.5rem;
       border: 1px solid #d7d7d7;
-      background: #fff;
+      background: var(--shape);
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 1rem;
-
+      font-size: 1rem; 
+      
       &::placeholder {
-          color: var(--text-body);
+          color: var(--text-title);
       }
-
-
-
-    
-  }
-  `;
+    }
+    form{
+      width: 100%;
+    }    
+    @media (max-width: 720px){
+      input {
+        width: 21%
+      }     
+    }
+`;

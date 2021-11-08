@@ -4,11 +4,11 @@ import { Summary } from '../Summary';
 import { Grafic } from '../Grafic';
 
 export function Dashboard() {
-    return(
-      <Container>
-        <Summary/>
-        <TransactionTable/>
-        <Grafic/>
-      </Container>
-    );
+  return(
+    <Container>
+      <Summary/>
+      <TransactionTable/>
+      <Grafic/>
+    </Container>
+  );
 }
